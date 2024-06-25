@@ -36,10 +36,19 @@ html {
     border-radius: 9px;
     padding: 18px 16px;
     padding-bottom: 33px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: gba(100, 100, 111, 0.2);
 }
 
-.email-input {
+input {
+    border: 0.4px solid #e3e2e2;
+}
+
+input:focus {
+    border: 0.2px solid rgb(156, 156, 255);
+    outline: 0.2px solid rgb(115, 115, 255);
+}
+
+.email-input {  
     font-size: 17px;
     padding: 16px 16px;
     border-radius: 6px;
@@ -115,8 +124,7 @@ html {
     margin: auto;
 }
 
-.img-div{
-    
+.img-div {
     box-sizing: border-box;
     margin-right: 0;
     padding-right: 32px;
@@ -134,4 +142,13 @@ html {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
+}
+
+.create-the-page {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.create-the-page:hover {
+    border-bottom: 2px solid black;
 }
